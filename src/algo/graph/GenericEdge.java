@@ -15,6 +15,7 @@ public class GenericEdge<K,V> implements IEdge{
 		map.put(String.valueOf(g.getId()), g);
 		map.put(String.valueOf(o.getId()), o);
 		map.put("cost", i);
+		
 		List<IEdge> l = g.getListEdge();
 		l.add(this);
 		g.setListEdge(l);
